@@ -10,9 +10,6 @@
                 <form class="card-text row g-3 needs-validation" action="{{ route('account.store') }}"
                     method="POST" enctype="multipart/form-data">
                     @csrf
-                    @if($errors->any())
-                    {{ implode('', $errors->all('<div>:message</div>')) }}
-                    @endif
                     <div class="form-row">
                         <div class="col-md-6 form-group">
                             <label for="Username" class="form-label">Username </label>

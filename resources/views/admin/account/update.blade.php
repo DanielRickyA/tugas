@@ -11,9 +11,6 @@
                     method="POST" enctype="multipart/form-data">
                     @csrf
                     @method("PUT")
-                    @if($errors->any())
-                    {{ implode('', $errors->all('<div>:message</div>')) }}
-                    @endif
                     <div class="form-row">
                         <div class="col-md-6 form-group">
                             <label for="Username" class="form-label">Username </label>
